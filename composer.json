@@ -1,0 +1,42 @@
+{
+    "name": "cdz/localization",
+    "description": "Laravel 8 multilang app scaffolding with Blade and Tailwind.",
+    "keywords": [
+        "laravel-multilang",
+        "localization",
+        "multilang",
+        "laravel",
+        "route",
+        "laravel-8",
+        "lang",
+        "php"
+    ],
+    "homepage": "https://github.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aurélie Palette",
+            "email": "aurelie@codeuz.com",
+            "homepage": "http://codeuz.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cdz\\Localization\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cdz\\Localization\\LocalizationServiceProvider"
+            ],
+            "aliases": {
+                "Localization": "Cdz\\Localization\\Facades\\Localization"
+            }
+        }
+    }
+}
